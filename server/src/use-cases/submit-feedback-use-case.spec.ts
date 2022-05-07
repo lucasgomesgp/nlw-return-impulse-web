@@ -4,7 +4,7 @@ const createFeedbackSpy = jest.fn();
 const sendMailSpy = jest.fn()
 const submitFeedback = new SubmitFeedbackUseCase(
   { create: createFeedbackSpy },
-  { sendMail:  sendMailSpy}
+  // { sendMail:  sendMailSpy}
 );
 
 describe("submit feedback", () => {
@@ -17,7 +17,7 @@ describe("submit feedback", () => {
       })
     ).resolves.not.toThrow();
     expect(createFeedbackSpy).toBeCalled();
-    expect(sendMailSpy).toBeCalled();
+    // expect(sendMailSpy).toBeCalled();
   });
   it("should not be able submit feedback without type", async () => {
     await expect(
