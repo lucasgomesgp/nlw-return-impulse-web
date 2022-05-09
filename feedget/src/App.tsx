@@ -1,7 +1,13 @@
+import { ToggleMode } from "./components/ToggleMode";
 import { Widget } from "./components/Widget";
 
 function App() {
-  return <Widget />;
+  return (
+    <>
+      <ToggleMode />
+      <Widget />
+    </>
+  );
 }
 
 export default App;
