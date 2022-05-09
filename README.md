@@ -22,8 +22,6 @@
 - [Insomnia](https://insomnia.rest/)
 
 ---
-
----
 ## :rocket: Lições do evento
 - Desenvolvimento com acessibilidade
     - Navegação por teclado
